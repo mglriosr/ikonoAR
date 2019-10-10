@@ -8,9 +8,19 @@
 		<a-image src="image.png"></a-image>
 		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
 		<!-- Default lighting injected by A-Frame. -->
-		<a-entity light="type: ambient; color: #BBB"></a-entity>
-		<a-entity light="type: directional; color: #FFF; intensity: 700" position="-0.5 100 100"></a-entity>
-    <a-entity light="type: directional; color: #FFF; intensity: 700" position="50 100 -50"></a-entity>
+		<a-entity light="type: ambient; color: #BBB;"></a-entity>
+
+		<!-- <a-entity light="type: directional; color: #FFF; intensity: 3" position="-50 100 100"></a-entity>
+    <a-entity light="type: directional; color: #FFF; intensity: 3" position="50 100 -50"></a-entity> -->
+
+		<a-entity light="type: directional; color: #FFF; intensity: 3" position="0 0 400"></a-entity>
+		<a-entity light="type: directional; color: #FFF; intensity: 3" position="0 400 0"></a-entity>
+		<a-entity light="type: directional; color: #FFF; intensity: 3" position="400 0 0"></a-entity>
+
+		<a-entity light="type: directional; color: #FFF; intensity: 3" position="0 0 -400"></a-entity>
+		<a-entity light="type: directional; color: #FFF; intensity: 3" position="0 -400 0"></a-entity>
+		<a-entity light="type: directional; color: #FFF; intensity: 3" position="-400 0 0"></a-entity>
+
 		<!-- use your gltf model -->
 		<a-entity gltf-model="#tree"></a-entity>
 		<!-- <a-entity glb-model="##tree"></a-entity> -->
@@ -20,6 +30,6 @@
 	</a-scene>
 	<!-- define your gltf asset -->
 	<a-assets>
-		<a-asset-item id="tree" src="Builkd2.gltf"></a-asset-item>
+		<a-asset-item id="tree" src="Builkd1.gltf"></a-asset-item>
 	</a-assets>
 </body>
