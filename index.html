@@ -12,8 +12,8 @@
 		<!-- <a-assets>
 		    <a-asset-item id="crate-obj" src="complete.obj"></a-asset-item>
 		    <a-asset-item id="crate-mtl" src="complete.mtl"></a-asset-item>
-		</a-assets> -->
-
+		</a-assets>
+ -->
 		<!-- Using the asset management system. -->
 		 <!-- <a-obj-model src="#crate-obj" mtl="#crate-mtl"></a-obj-model> -->
 
@@ -40,8 +40,8 @@
 		<a-entity light="type: directional; color: #FFF; intensity: 7" position="-400 0 0"></a-entity>
  -->
 		<!-- use your gltf model -->
-		<a-entity gltf-model="#build"></a-entity>
-		<!-- <a-entity glb-model="##build"></a-entity> -->
+		<a-entity gltf-model="#build" material='opacity: 0;'></a-entity>
+		
  		
 		<a-camera><a-cursor></a-cursor></a-camera>
 		<a-marker-camera type='pattern' url='pattern-frame.patt'></a-marker-camera>
@@ -50,5 +50,6 @@
 	<!-- define your gltf asset -->
 	<a-assets>
 		<a-asset-item id="build" src="complete.gltf"></a-asset-item>
+		<a-asset-item id="build2" src="Builkd2.gltf"></a-asset-item>
 	</a-assets>
 </body>
