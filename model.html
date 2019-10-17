@@ -40,17 +40,18 @@
 		<a-entity light="type: directional; color: #FFF; intensity: 7" position="-400 0 0"></a-entity>
  -->
 		<!-- use your gltf model -->
-		<!-- <a-entity gltf-model="#build2"></a-entity> -->
-		<a-entity gltf-model="#build"></a-entity>
+		<a-entity gltf-model="#build" material='opacity: 0;'></a-entity>
 		
  		
 		<a-camera><a-cursor></a-cursor></a-camera>
-		<a-marker-camera type='pattern' url='pattern.php'></a-marker-camera>
+		<!-- <a-marker-camera type='pattern' url='pattern-frame.patt'></a-marker-camera> -->
+		<!-- <a-marker-camera type='pattern' url='pattern.patt'></a-marker-camera> -->
+		<a-marker-camera type='pattern' url='pattern-qr_img.php.patt'></a-marker-camera>
 
 	</a-scene>
 	<!-- define your gltf asset -->
 	<a-assets>
-		<a-asset-item id="build" src="complete.glb"></a-asset-item>
-		<!-- <a-asset-item id="build2" src="Builkd2.glb"></a-asset-item> -->
+		<a-asset-item id="build" src="complete.gltf"></a-asset-item>
+		<!-- <a-asset-item id="build2" src="Builkd2.gltf"></a-asset-item> -->
 	</a-assets>
 </body>
