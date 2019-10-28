@@ -41,19 +41,21 @@
  -->
 		<!-- use your gltf model -->
 		<!-- <a-entity gltf-model="#build2"></a-entity> -->
-		<a-entity gltf-model="#build"></a-entity>
 		
  		<!-- <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'></a-scene> -->
 		<a-camera><a-cursor></a-cursor></a-camera>
+
+		<a-assets>
+			<a-asset-item id="build" src="complete.glb"></a-asset-item>
+		</a-assets>
+		<a-entity gltf-model="#build" class='no-display'></a-entity>
 		<a-marker-camera type='pattern' url='pattern-marker.patt' smoothTolerance='10000' smoothThreshold='20' smooth='true'></a-marker-camera>
 		<a-marker-camera type='pattern' url='pattern-photo.patt' smoothTolerance='10000' smoothThreshold='20'smooth='true'></a-marker-camera>
 		<a-marker-camera type='pattern' url='pattern-img.patt' smoothTolerance='10000' smoothThreshold='20'smooth='true'></a-marker-camera>
-		<a-marker-camera type='pattern' url='pattern-frame-2.patt' smoothTolerance='10000' smoothThreshold='20'smooth='true'></a-marker-camera>
+		<a-marker-camera type='pattern' url='pattern-frame-2.patt' smoothTolerance='10' smoothThreshold='2'smooth='true'></a-marker-camera>
+		<a-marker-camera type='pattern' url='pattern-img-2.patt' smoothTolerance='10' smoothThreshold='2'smooth='true'></a-marker-camera>
 		 
-		<a-assets>
-			<a-asset-item id="build" src="complete.glb"></a-asset-item>
-			<!-- <a-asset-item id="build2" src="Builkd2.glb"></a-asset-item> -->
-		</a-assets>
+		
 	</a-scene>
 	<!-- define your gltf asset -->
 </body>
